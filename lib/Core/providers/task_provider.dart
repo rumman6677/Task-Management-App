@@ -46,12 +46,12 @@ class TaskProvider extends ChangeNotifier {
       // DateTime taskAddedTime = DateTime.now();
       // DateTime notificationTime = taskAddedTime.add(const Duration(minutes: 1));
       print(selectedDueDate);
-      await LocalNotificationService().scheduleNotification(
-        id: 1,
-        title: 'Task Reminder',
-        body: 'Don\'t forget to complete your task: Alfred Local Notification',
-        scheduledNotificationDateTime: selectedDueDate!,
-      );
+      // await LocalNotificationService().scheduleNotification(
+      //   id: 1,
+      //   title: 'Task Reminder',
+      //   body: 'Don\'t forget to complete your task: Alfred Local Notification',
+      //   scheduledNotificationDateTime: selectedDueDate!,
+      // );
 
       dialog.dismiss();
       Get.back();
